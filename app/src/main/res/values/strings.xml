@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NDK</string>
+    <string name="search">Найти</string>
+    <string name="clear">Очистить</string>
+    <string name="name_abon">Имя абонента:</string>
+    <string name="last_name">Фамилия:</string>
+    <string name="number">Номер:</string>
+    <string name="add_abon">Добавить абонента</string>
+    <string name="add_new_abonent">Добавить нового абонента</string>
+</resources>
