@@ -42,7 +42,7 @@ public class ListAbonPresenter {
         view.startOtherScreen(activity);
     }
 
-    Observer<ArrayList<AbonData>> observer = new Observer<ArrayList<AbonData>>() {
+    Observer<String> observer = new Observer<String>() {
 
         @Override
         public void onSubscribe(Disposable d) {
@@ -51,9 +51,11 @@ public class ListAbonPresenter {
         }
 
         @Override
-        public void onNext(ArrayList<AbonData> toDoData) {
-
-            view.showList(toDoData);
+        public void onNext(String toDoData) {
+//параллель тут
+            toDoData = model.getAbonList();
+            System.out.println("Ответ с сервера: "+toDoData);
+//            view.showList(toDoData);
 
         }
 

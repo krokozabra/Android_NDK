@@ -19,8 +19,17 @@ import com.kondaurov.ndktest.interfaces.ListInterface;
 import com.kondaurov.ndktest.model.ListAbonModel;
 import com.kondaurov.ndktest.presenter.ListAbonPresenter;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import io.reactivex.Observable;
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.schedulers.Schedulers;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 
 public class MainActivity extends AppCompatActivity implements ListInterface,SwipeRefreshLayout.OnRefreshListener {
 
